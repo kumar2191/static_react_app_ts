@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppWrapper from './appwraper';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <AppWrapper>
     <App />
-  </React.StrictMode>
+  </AppWrapper>
 );
 
 // If you want to start measuring performance in your app, pass a function
